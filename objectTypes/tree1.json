@@ -1,0 +1,63 @@
+{
+	"name": "Tree1",
+	"plugin-id": "Sprite",
+	"sid": 378146254343558,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 958847455294910
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1220,
+						"height": 1449,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8557951,
+						"collisionPoly": {
+							"points": [
+								0.4622950819672134,
+								0.6135265700483091,
+								0.5491803278688522,
+								0.5824706694271911,
+								0.5688524590163944,
+								0.7108350586611452,
+								0.5868852459016398,
+								0.8450655624568664,
+								0.6188524590163933,
+								0.9723947550034507,
+								0.4180327868852458,
+								0.9723947550034506,
+								0.4516393442622952,
+								0.8467908902691512,
+								0.4631147540983609,
+								0.7208419599723946
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 790610489762763,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

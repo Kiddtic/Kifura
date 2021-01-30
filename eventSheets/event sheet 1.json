@@ -1,0 +1,222 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player Movement",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [],
+			"sid": 537769013722578
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving-direction",
+					"objectClass": "Player",
+					"sid": 413740322580151,
+					"behaviorType": "TileMovement",
+					"parameters": {
+						"direction": "down"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 580256787050987,
+					"parameters": {
+						"animation": "\"walk down\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 267256964908599
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 238867501130328
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "cam",
+					"sid": 309327578176344,
+					"parameters": {
+						"x": "lerp(self.X, Player.X, 0.03)",
+						"y": "lerp(self.Y, Player.Y, 0.03)"
+					}
+				}
+			],
+			"sid": 514915446417468
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 746232472391673,
+					"parameters": {
+						"object": "r1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "flash",
+					"objectClass": "Player",
+					"sid": 606690855474683,
+					"behaviorType": "Flash",
+					"parameters": {
+						"on-time": "0.1",
+						"off-time": "0.1",
+						"duration": "0.4"
+					}
+				}
+			],
+			"sid": 986017128032263
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 112369019857734,
+					"parameters": {
+						"object": "Enemy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "flash",
+					"objectClass": "Player",
+					"sid": 416254287406990,
+					"behaviorType": "Flash",
+					"parameters": {
+						"on-time": "0.1",
+						"off-time": "0.1",
+						"duration": "0.8"
+					}
+				},
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Player",
+					"sid": 777746103117245,
+					"parameters": {
+						"instance-variable": "HP",
+						"value": "2"
+					}
+				}
+			],
+			"sid": 176233236557342,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Player",
+							"sid": 723578397225119,
+							"parameters": {
+								"instance-variable": "HP",
+								"comparison": 3,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "flash",
+							"objectClass": "Player",
+							"sid": 907426837800954,
+							"behaviorType": "Flash",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "1.0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 372140708915088,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "move-to-object",
+							"objectClass": "Sprite",
+							"sid": 242117194846810,
+							"parameters": {
+								"where": "in-front",
+								"object": "Player"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Player",
+							"sid": 427909058876915
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 842690734994325,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 461848844559810
+						}
+					],
+					"sid": 146754957029993
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 120642127853980
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 782832324381773,
+					"parameters": {
+						"audio-file": "Sad_intro",
+						"loop": "looping",
+						"volume": "-15",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 955048188506675
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 983715838858188
+		}
+	],
+	"sid": 170525958770320
+}
