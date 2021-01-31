@@ -1,0 +1,32 @@
+{
+	"name": "into-events",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 340319741076625,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "next_button"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 139896353522743,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 957278200853186
+		}
+	],
+	"sid": 817018803707966
+}

@@ -1,0 +1,57 @@
+{
+	"name": "health_bar_art_sprite",
+	"plugin-id": "Sprite",
+	"sid": 689080299149010,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 654,
+						"height": 300,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3297537,
+						"collisionPoly": {
+							"points": [
+								0.0015290519877675841,
+								0.0033333333333333335,
+								0.5,
+								0.43333333333333335,
+								0.9938837920489296,
+								0.01,
+								0.9464831804281345,
+								0.5,
+								0.9740061162079511,
+								0.9433333333333334,
+								0.5,
+								0.9433333333333334,
+								0.024464831804281346,
+								0.9433333333333334,
+								0.9250764525993884,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 730129106098904,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

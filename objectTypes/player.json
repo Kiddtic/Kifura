@@ -7,7 +7,7 @@
 		{
 			"name": "HP",
 			"type": "number",
-			"desc": "",
+			"desc": "Health",
 			"sid": 709710146016099
 		},
 		{
