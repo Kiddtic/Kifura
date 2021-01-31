@@ -2,7 +2,7 @@
 	"name": "cam",
 	"plugin-id": "Sprite",
 	"sid": 344009980901300,
-	"isGlobal": false,
+	"isGlobal": true,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
