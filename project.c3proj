@@ -85,6 +85,38 @@
 			"author": "Scirra",
 			"version": "r225",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "custom",
+			"name": "Custom",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Platform",
+			"name": "Platform",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Rotate",
+			"name": "Rotate",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
 		}
 	],
 	"uniqueId": "yuf10c160nh",
@@ -102,7 +134,21 @@
 			"Tree2",
 			"Tree3",
 			"log1",
-			"Sprite"
+			"Sprite",
+			"Sprite2",
+			"hitbox",
+			"Sprite3",
+			"Sprite4",
+			"TiledBackground3",
+			"TiledBackground4",
+			"TiledBackground5",
+			"log2",
+			"Ape",
+			"Patrolfence",
+			"bash",
+			"Intro",
+			"Sprite5",
+			"warp"
 		],
 		"subfolders": []
 	},
@@ -114,13 +160,17 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"Layout 1",
+			"Objects",
+			"Layout 2"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"Event sheet 1",
+			"Global",
+			"Event sheet 2"
 		],
 		"subfolders": []
 	},
@@ -130,7 +180,23 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "shield_hit.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 774160335197442
+				},
+				{
+					"name": "walk-textured.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 281459133023498
+				},
+				{
+					"name": "Cave.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 858212267513822
+				}
+			],
 			"subfolders": []
 		},
 		"music": {

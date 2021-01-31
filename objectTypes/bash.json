@@ -1,0 +1,68 @@
+{
+	"name": "bash",
+	"plugin-id": "Sprite",
+	"sid": 529509094927502,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Rotate",
+			"name": "Rotate",
+			"sid": 355323126482224
+		},
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 181938426531847
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 390,
+						"height": 519,
+						"originX": 0.005128205128205128,
+						"originY": 0.4605009633911368,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2028502,
+						"collisionPoly": {
+							"points": [
+								0.5516025641025646,
+								0.9773603082851637,
+								0.5,
+								0.6955684007707129,
+								0.4076923076923077,
+								0.6955684007707129,
+								0.49743589743589745,
+								0.5,
+								0.39230769230769236,
+								0.2947976878612717,
+								0.5,
+								0.24662813102119463,
+								0.5442307692307697,
+								0,
+								0.8333333333333334,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 868139144653539,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,67 @@
+{
+	"name": "Global",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "xPos",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 675299817324303
+		},
+		{
+			"eventType": "variable",
+			"name": "yPos",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 542538159037600
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Start of Layout",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 158661623365334
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Player",
+							"sid": 330733059825660,
+							"parameters": {
+								"x": "xpos",
+								"y": "yPos"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "cam",
+							"sid": 417605877236547,
+							"parameters": {
+								"x": "xPos",
+								"y": "yPos"
+							}
+						}
+					],
+					"sid": 407459222682468
+				}
+			],
+			"sid": 292189644365247
+		}
+	],
+	"sid": 437509148311309
+}
