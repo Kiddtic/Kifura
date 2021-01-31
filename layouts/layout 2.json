@@ -440,7 +440,7 @@
 					},
 					"uid": 70,
 					"instanceVariables": {
-						"HP": 10,
+						"HP": 100,
 						"Up": false,
 						"Dwn": false,
 						"Left": false,

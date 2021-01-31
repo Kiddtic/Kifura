@@ -1015,7 +1015,7 @@
 					},
 					"uid": 3,
 					"instanceVariables": {
-						"HP": 10,
+						"HP": 100,
 						"Up": false,
 						"Dwn": false,
 						"Left": false,
@@ -1544,35 +1544,6 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "Intro",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 47,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1587,
-						"y": 240,
-						"width": 624,
-						"height": 470,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "warp",
 					"properties": {
 						"initially-visible": true,
@@ -1585,9 +1556,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1824,
-						"y": 434,
-						"width": 68,
+						"x": 1905,
+						"y": 446,
+						"width": 22,
 						"height": 590,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -1620,6 +1591,122 @@
 			"isTransparent": true,
 			"parallaxX": 1,
 			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		},
+		{
+			"name": "HUD",
+			"overriden": 1,
+			"instances": [
+				{
+					"type": "health_bar_art_sprite",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 82,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1653,
+						"y": 62,
+						"width": 144.01093335007528,
+						"height": 65.34299566898547,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "healthbackground",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 85,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1653.8079186493258,
+						"y": 78.2316937531694,
+						"width": 100,
+						"height": 12,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "HealthBar",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 84,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1603.7498468120407,
+						"y": 78.27861512557921,
+						"width": 100,
+						"height": 12.994330988320314,
+						"originX": 0,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 770761607215267,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 0,
+			"parallaxY": 0,
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"useRenderCells": false,

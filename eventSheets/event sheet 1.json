@@ -631,9 +631,9 @@
 				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "Player",
-					"sid": 112369019857734,
+					"sid": 454160361648379,
 					"parameters": {
-						"object": "Enemy"
+						"object": "Ape"
 					}
 				}
 			],
@@ -652,10 +652,18 @@
 				{
 					"id": "subtract-from-instvar",
 					"objectClass": "Player",
-					"sid": 777746103117245,
+					"sid": 370749627322702,
 					"parameters": {
 						"instance-variable": "HP",
-						"value": "2"
+						"value": "10"
+					}
+				},
+				{
+					"id": "set-width",
+					"objectClass": "HealthBar",
+					"sid": 862173898723301,
+					"parameters": {
+						"width": "Player.HP"
 					}
 				}
 			],
@@ -1087,7 +1095,7 @@
 			"actions": [
 				{
 					"id": "start-animation",
-					"objectClass": "Intro",
+					"objectClass": "dialogue_sprite_01",
 					"sid": 252426693792121,
 					"parameters": {
 						"from": "current-frame"
@@ -1103,7 +1111,7 @@
 				},
 				{
 					"id": "destroy",
-					"objectClass": "Intro",
+					"objectClass": "dialogue_sprite_01",
 					"sid": 174580418754613
 				}
 			],
@@ -1124,7 +1132,7 @@
 			"actions": [
 				{
 					"id": "destroy",
-					"objectClass": "Intro",
+					"objectClass": "dialogue_sprite_01",
 					"sid": 514301169878353
 				}
 			],
@@ -1171,9 +1179,9 @@
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 925036373387816,
+							"sid": 584954239741079,
 							"parameters": {
-								"layout": "Layout 2"
+								"layout": "Intro1"
 							}
 						}
 					],

@@ -1,0 +1,80 @@
+{
+	"name": "title-events",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 701764892681798,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "playbutton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 730114594405201,
+					"parameters": {
+						"layout": "Intro1"
+					}
+				}
+			],
+			"sid": 195642521645251
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 935719719281977
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 512115596577347,
+					"parameters": {
+						"audio-file": "Sad_intro",
+						"loop": "looping",
+						"volume": "-10",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 800402673302463
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 624590247289544,
+					"parameters": {
+						"object": "Sprite7"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-cursor-style",
+					"objectClass": "Mouse",
+					"sid": 995858744063572,
+					"parameters": {
+						"cursor-style": "hand"
+					}
+				}
+			],
+			"sid": 692287047767752
+		}
+	],
+	"sid": 672399562846905
+}

@@ -1066,7 +1066,7 @@
 			"actions": [
 				{
 					"id": "start-animation",
-					"objectClass": "Intro",
+					"objectClass": "dialogue_sprite_01",
 					"sid": 133576743166891,
 					"parameters": {
 						"from": "current-frame"
@@ -1082,7 +1082,7 @@
 				},
 				{
 					"id": "destroy",
-					"objectClass": "Intro",
+					"objectClass": "dialogue_sprite_01",
 					"sid": 569178269026215
 				}
 			],
@@ -1103,7 +1103,7 @@
 			"actions": [
 				{
 					"id": "destroy",
-					"objectClass": "Intro",
+					"objectClass": "dialogue_sprite_01",
 					"sid": 770879211240358
 				}
 			],
